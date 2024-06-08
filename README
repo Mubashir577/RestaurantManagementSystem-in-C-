@@ -1,0 +1,62 @@
+# Hotel Management System
+
+This C++ program is a simple hotel management system with the following features:
+
+## Features
+
+1. **Menu Display**
+   - Displays today's menu with prices for burgers, ice creams, and drinks.
+
+2. **Classes and Inheritance**
+   - `Date`: Handles date-related operations.
+   - `Person`: Base class for `Labour`, `Manager`, `Admin`, and `Customer`.
+   - `Labour`: Manages labor-related details and operations.
+   - `Manager`: Provides manager-specific functionalities including menu updates and password management.
+   - `Admin`: Allows admin access for viewing records, changing passwords, and adding new labor.
+   - `Customer`: Handles customer orders and billing.
+
+3. **Admin Access**
+   - Requires password (`1234`) to access.
+   - View previous records, change password, and manage labor details.
+
+4. **Manager Access**
+   - Requires password (`6789`) to access.
+   - Set automatic menu, update menu prices, and change password.
+
+5. **Customer Order**
+   - Allows customers to place orders from the menu and generates a bill.
+
+## How to Use
+
+1. **Run the Program**
+   - Compile and run the program.
+
+2. **Main Menu**
+   - Choose the desired operation:
+     1. Admin Access
+     2. Manager Access
+     3. Customer Order
+     4. Exit
+
+3. **Admin Access**
+   - Enter the admin password to view records, change password, or manage labor details.
+
+4. **Manager Access**
+   - Enter the manager password to set or update the menu and manage password.
+
+5. **Customer Order**
+   - Enter customer details and place an order from the displayed menu. The total bill will be calculated and displayed.
+
+6. **Exit**
+   - Exit the program.
+
+## Note
+
+- The system uses predefined passwords for admin and manager access.
+- Menu prices and details can be updated through the manager's access.
+
+## Dependencies
+
+- Requires `<iostream>`, `<conio.h>`, `<Windows.h>`, `<string>`, and `<cstring>` headers.
+- Uses `system("cls")` to clear the screen, which is platform-specific (Windows).
+
